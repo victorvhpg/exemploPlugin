@@ -1,0 +1,28 @@
+{
+    "name": "exemploPlugin",
+    "title": "exemploPlugin",
+    "description": "exemplo básico de criar plugin",
+    "keywords": [
+        "exemplo",
+        "plugin"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Victor Hugo",
+        "url": "https://github.com/victorvhpg/"
+    },
+ 
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/victorvhpg/exemploPlugin/issues",
+    "homepage": "https://github.com/victorvhpg/exemploPlugin",
+    "docs": "https://github.com/victorvhpg/exemploPlugin",
+    "download": "https://github.com/victorvhpg/exemploPlugin/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.3"
+    }
+}
