@@ -1,7 +1,7 @@
 {
     "name": "exemploPlugin",
     "title": "exemploPlugin",
-    "description": "exemplo deuma estrutura básica de um plugin jQuery",
+    "description": "exemplo de uma estrutura básica de um plugin jQuery",
     "keywords": [
         "exemplo",
         "plugin"
