@@ -1,15 +1,14 @@
-// exemplo básico de  plugin
+//https://github.com/victorvhpg/exemploPlugin
+// estrutura básica de um plugin jQuery
 (function(window) {
     "use strict";
-    var console = window.console, 
-    document = window.document, $ = window.jQuery,
-    _configPadrao = {
-        tipoLog: "dir",
-        qualquerCoisa: {}
-    };
-
-    //-------------------------------------------------------
-    var Exemplo = function(dom, config) {
+    var $ = window.jQuery,
+            document = window.document,
+            Exemplo,
+            _configPadrao;
+    //--------------------------------------------------
+    _configPadrao = {};
+    Exemplo = function(dom, config) {
         this.dom = dom;
         this.config = config;
     };
@@ -17,23 +16,22 @@
     Exemplo.criar = function(dom, config) {
         return (new Exemplo(dom, config)).init();
     };
-    //-----------------------------------------------
+    //-------------------------------------------------------
     Exemplo.prototype = {
         constructor: Exemplo,
-        fazAlgumaCoisa: function(obj) {
-            console[this.config.tipoLog](obj);
+        fazAlgumaCoisa: function() {
+
         },
         init: function() {
-            console.log("init");
-            this.fazAlgumaCoisa(this.dom);
+            this.fazAlgumaCoisa();
             return this;
         }
     };
-    //---------------------------------------------------
+    //---------------------------------------------------------
     $.fn.exemploPlugin = function(configEnviada) {
-        var config = $.extend(true, {}, _configPadrao, configEnviada);
         return this.each(function(indice, item) {
-            Exemplo.criar(item, config);
+            var config = $.extend(true, {}, _configPadrao, configEnviada),
+                    obj = Exemplo.criar(item, config);
         });
     };
 }(window));

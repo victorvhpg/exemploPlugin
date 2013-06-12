@@ -1,14 +1,14 @@
 {
     "name": "exemploPlugin",
     "title": "exemploPlugin",
-    "description": "exemplo básico de criar plugin",
+    "description": "exemplo deuma estrutura básica de um plugin jQuery",
     "keywords": [
         "exemplo",
         "plugin"
     ],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
-        "name": "Victor Hugo",
+        "name": "victorvhpg",
         "url": "https://github.com/victorvhpg/"
     },
  
