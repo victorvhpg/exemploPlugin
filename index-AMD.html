@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <script src="http://requirejs.org/docs/release/2.1.14/minified/require.js" ></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js" ></script>
+ 
+        <script>
+            requirejs.config({
+                baseUrl: ".",
+                shim: {
+                    "exemploPlugin2-AMD": ["jquery"],
+                    "exemploPlugin-AMD": ["jquery"]
+                }
+            });
+
+
+            require(["jquery", "exemploPlugin-AMD", "exemploPlugin2-AMD"], function(jQuery) {
+                jQuery(function($) {
+                    $("label").exemploPlugin().exemploPlugin2();;
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <label>aaaa</label>
+        <label>aaaa</label>
+        <label>aaaa</label>
+        <label>aaaa</label>
+        <label>aaaa</label>
+        <label>aaaa</label>
+    </body>
+</html>
