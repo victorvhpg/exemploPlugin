@@ -1,4 +1,5 @@
 //https://github.com/victorvhpg/exemploPlugin
+// @victorvhpg
 // estrutura básica de um plugin jQuery
 //com suporte a AMD  
 (function(window) {
@@ -12,6 +13,7 @@
             // Browser 
             fnCriaPlugin(window.jQuery);
         }
+        
     })(function($) {
         var Exemplo, _configPadrao;
         _configPadrao = {};

@@ -13,6 +13,7 @@
             // Browser 
             fnCriaPlugin(window.jQuery);
         }
+        
     })(function($) {
         var getExemplo, _configPadrao;
         _configPadrao = {};
