@@ -3,9 +3,9 @@
 (function(window) {
     "use strict";
     var $ = window.jQuery,
-            document = window.document,
-            Exemplo,
-            _configPadrao;
+        document = window.document,
+        Exemplo,
+        _configPadrao;
     //--------------------------------------------------
     _configPadrao = {};
     Exemplo = function(dom, config) {
@@ -31,7 +31,7 @@
     $.fn.exemploPlugin = function(configEnviada) {
         return this.each(function(indice, item) {
             var config = $.extend(true, {}, _configPadrao, configEnviada),
-                    obj = Exemplo.criar(item, config);
+                obj = Exemplo.criar(item, config);
         });
     };
 }(window));

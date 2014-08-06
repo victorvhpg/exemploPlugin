@@ -3,9 +3,9 @@
 (function(window) {
     "use strict";
     var $ = window.jQuery,
-            document = window.document,
-            getExemplo,
-            _configPadrao;
+        document = window.document,
+        getExemplo,
+        _configPadrao;
     //--------------------------------------------------
     _configPadrao = {};
     getExemplo = function(dom, configEnviada) {

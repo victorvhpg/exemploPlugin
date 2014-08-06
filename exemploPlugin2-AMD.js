@@ -1,19 +1,19 @@
 //https://github.com/victorvhpg/exemploPlugin
 // @victorvhpg
 // estrutura básica de um plugin jQuery
-//com suporte a AMD 
+//com suporte a AMD
 (function(window) {
     "use strict";
 
     (function(fnCriaPlugin) {
         if (typeof define === "function" && define.amd) {
-            // AMD 
+            // AMD
             define(["jquery"], fnCriaPlugin);
         } else {
-            // Browser 
+            // Browser
             fnCriaPlugin(window.jQuery);
         }
-        
+
     })(function($) {
         var getExemplo, _configPadrao;
         _configPadrao = {};
